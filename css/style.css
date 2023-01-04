@@ -1,0 +1,414 @@
+@charset "UTF-8";
+
+/* ------ Paramètres généraux ------*/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #56042C;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 0px;
+}
+
+nav {
+    background-color: #56042C;
+    box-shadow: 0 0 10px black;
+}
+
+h1{
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    padding: 10px 0px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #07304e;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.3rem;
+}
+
+p{
+    margin: 0;
+    padding: 0px 0px 20px 0px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+
+section {
+    padding: 40px 0;
+}
+
+/* ------ Configurations spécifiques ------*/
+
+#navMain li > a:hover {
+    font-weight: bold;
+    background-color: #0c4873;
+}
+
+section#banner {
+    height: 80vh;
+    background: linear-gradient(90deg, rgba(86, 4, 44, 0.811) 30%, rgba(86, 4, 44, 0.132)),
+                url(../images/stade1.jpg),
+                url(../images/ruido.png);
+    background-size: cover;
+    background-position-x: 25%;
+    
+}
+
+section#banner div#bannerTitle {
+    padding-bottom: 20px;
+}
+
+p.espaco {
+    margin-bottom: 20px;
+}
+
+/* ------ Boutons et liens ------*/
+
+.bouton {
+    padding: 10px;
+    font-weight: bold;
+    font-size: .1rem;
+    text-decoration: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+#btnRed {
+    color: #56042C;
+    border: 2px solid #56042C; 
+}
+
+#btnRed:hover {
+    background-color: #56042C;
+    color: white;
+}
+
+.btnBlanc {
+    position: relative;
+    top: 25px; left: 0px;
+    color: white;
+    border: 2px solid white; 
+}
+
+.btn-outline-light{
+    color: #56042C;
+    border: 2px solid #56042C; 
+    position: relative;
+    top: 10px; left: 20px;
+}
+
+.btnAmarelo {
+    color: rgb(209, 161, 17);
+    border: 2px solid rgb(209, 161, 17);
+}
+
+.btnAmarelo:hover {
+    background-color: rgb(209, 161, 17);
+    color: white;
+}
+
+#btnHeure:hover {
+    background-color: white;
+    color: #07304e;
+    
+}
+
+/* ------ Qatar ------*/
+section#qatar {
+    background-color: white;  
+    padding-bottom: 20px;
+    box-shadow: inset 0 8px 8px rgba(0, 0, 0, 0.452);
+}
+
+#qatar-img{
+    width: 100%;
+    padding-top: 12px;
+}
+
+hr.hr-qatar {
+    background-color: rgba(191, 191, 191, 0.783);
+    margin: 0;
+}
+
+.ordem1 {
+    order: 1;
+}
+
+.ordem2 {
+    order: 2;
+}
+
+/* ------ Mascote ------*/
+section#mascote {
+    padding-top: 20px;
+    background-color: white;   
+
+}
+
+.letraPreta {
+    color: black;
+}
+
+.img-fluid {
+    max-width: 80%;
+    height: auto;
+}
+
+/* ------ Groupes ------*/
+
+section#groupes h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+section#groupes {
+    background-color: #56042C;
+    box-shadow: 0 -8px 10px rgba(0, 0, 0, 0.452);
+}
+
+.groupeTime {
+    padding: 10px;
+    background-color: rgba(241, 241, 241, 0.944);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.719);
+}
+
+section#groupes ul {
+    color: black;
+    padding: 0px 10px;
+}
+
+section#groupes ul > li {
+    padding: 20px 0px;
+}
+
+section#groupes ul > li > img {
+    width: 15%;
+}
+
+section#groupes ul > li > span {
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding-left: 20px;
+}
+
+.divisorL {
+    border-bottom: 1px solid gray;
+}
+
+.col-sm-12{
+    padding: 6px;
+}
+
+section#groupes .btnBlanc {
+    position: relative;
+    top: 25px; left: 0px;
+    color: white;
+    border: 2px solid white; 
+}
+
+/* ------ Match ------*/
+.carousel-indicators {
+    position: relative;
+    right: 1;
+    bottom: 1;
+    left: 1;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: border-box;
+    flex: 0 1 auto;
+    max-width: 37px;
+    min-width: 15px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-indent: 0px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #dee2e6;
+    border-collapse: collapse;
+    opacity: 1;
+    transition: none;
+}
+
+.carousel-indicators li > button {
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    padding: 6px 10px;
+    text-align: center;
+    color: #07304e;
+    text-align: center;
+}
+
+.carousel-indicators .active button {
+    background-color: #0D6efd;
+    color: white;
+}
+
+section#calendriermatch {
+    margin-top: 44px;
+    color: black;
+}
+
+section#calendriermatch ul > li > hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.backgBtn{
+    width: 50px;
+    height: 50px;
+    background-color: #07304e;
+    border-radius: 50%;
+}
+
+.info {
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.match{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    padding: 14px 0px;
+}
+
+.match img {
+    width: 56px;
+    border-radius: 10px;
+    margin: 0px 10px;
+    border: 1px solid rgb(234, 234, 234);
+    box-shadow: 0 0 5px rgb(128, 128, 128);
+}
+
+.data {
+    font-size: 0.85rem;
+    padding: 5px 15px;
+    background-color: rgb(234, 234, 234);
+    border-radius: 20px;
+}
+
+section#finals h3 {
+    margin: 0;
+    padding-bottom: 0;
+}
+
+section#finals h1 {
+    color: #ffd700;
+}
+
+section#calendriermatch span2{
+    font-weight: bold;
+}
+
+section#calendriermatch span3{
+    font-size: medium;
+}
+
+section#worldchampion h1 {
+    color: #ffd700;
+}
+
+section#worldchampion img {
+    width: 35%;
+}
+
+/* ------ Pays hôte ------*/
+div#areaArtigo {
+    background-color: white;
+    padding-top: 92px;
+    padding-bottom: 50px;
+    color: black;
+}
+
+div.artigo {
+    min-width: 300px;
+    max-width: 900px;
+}
+
+div.artigo article {
+    margin: 0px 5px;
+    text-align: justify;
+}
+
+div.artigo article > img {
+    width: 60%;
+    padding-bottom: 20px;
+    display: block;
+    margin: auto;
+}
+
+div.artigo article > ul {
+    list-style: circle;
+    padding-left: 25px;
+    font-size: 1rem;
+}
+
+div#areaArtigo h3{
+    text-align: center;
+}
+
+
+/* ------ Footer ------*/
+footer a {
+    color: white;
+}
+
+/* ------ Stades ------*/
+
+section#stade {
+    background-color: white;  
+    padding-bottom: 20px;
+    box-shadow: inset 0 8px 8px rgba(0, 0, 0, 0.452);
+}
+
+section#stade img {
+    width: 90%;
+}
+
+section#stade .btn-outline-light{
+    color: #56042C;
+    border: 2px solid #56042C; 
+    position: relative;
+    top: 10px; left: 0px;
+}

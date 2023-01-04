@@ -1,0 +1,98 @@
+/* ------ Media Queries ------*/
+@media screen and (min-width: 768px) {
+    /* ------ Paramètres généraux ------*/
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+    }
+    
+    p{
+        font-size: 1.2rem;
+    }
+
+    .bouton {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .col-md-6{
+        padding: 6px;
+    }
+
+    /* ------ Joueur ------*/
+    div#jogadores article > ul {
+        font-size: 1.2rem;
+    }
+
+    /* ------ Match ------*/
+    .timesJogos{
+        font-size: 2rem;
+    }
+    
+    .timesJogos img {
+        width: 80px;
+        margin: 0px 15px;
+    }
+
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .backgBtn{
+        width: 64px;
+        height: 64px;
+        background-color: #07304e;
+        border-radius: 50%;
+    }
+    
+    div#navCarousel > ul > li > button {
+        padding: 6px 12px;
+    }
+
+    /* ------ Qatar ------*/
+    section#qatar h2{
+        padding-left: 20px;
+    }
+
+    section#qatar p{
+        padding-left: 20px;
+    }   
+}
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    section#banner {
+        background: linear-gradient(90deg, rgba(86, 4, 44, 0.843) 20%, rgba(86, 4, 44, 0.213)),
+        url(../images/stade1.jpg) no-repeat center left;
+        
+    }
+
+    .img-fluid {
+        max-width: 60%;
+        height: auto;
+    }
+
+    #qatar-img{
+        width: 90%;
+    }
+}
